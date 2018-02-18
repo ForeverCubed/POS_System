@@ -1,4 +1,4 @@
 # POS_System
 Start of project
-Konor is cool xd
-\nno u
+Konor is cool xd<br />
+no u
