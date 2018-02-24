@@ -50,3 +50,5 @@ Temporary Items
 POS_System/out/production/Point_Of_Sales/com/roundtheclock/pos/
 
 src/DataManagement/data.json
+src/DataManagement/jsondata.json
+src/DataManagement/txtdata.txt
