@@ -1,5 +1,6 @@
 package DataManagement;
 
+
 public class Person
 {
     private String name;
@@ -7,16 +8,28 @@ public class Person
     private int id;
     private int pin;
 
-    public Person(String name, int id, String[] positions,int pin)
+    public Person(String name, int id, String[] positions,int pin, String filename)
     {
         this.name = name;
         this.id = id;
         this.positions = positions;
         this.pin = pin;
+
+        DataManager dm = new DataManager(filename);
+        dm.addPerson(this);
+    }
+    public Person(String name, int id, String[] positions,int pin, DataManager dm)
+    {
+        this.name = name;
+        this.id = id;
+        this.positions = positions;
+        this.pin = pin;
+
+        dm.addPerson(this);
     }
 
     public String toString(){
-        return ""+this.name+","+String.valueOf(this.id);
+        return this.name+","+String.valueOf(this.id);
     }
 
     public String saveString(){
@@ -41,10 +54,6 @@ public class Person
 
     public int getId(){
         return this.id;
-    }
-
-    public int getPin(){
-        return this.pin;
     }
 
     public boolean comparePin(int pin){
