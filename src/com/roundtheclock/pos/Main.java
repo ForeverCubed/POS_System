@@ -11,12 +11,10 @@ public class Main {
         GridLayout mainGridLayout = new GridLayout();
         mainGridLayout.setRows(10);
         mainGridLayout.setColumns(10);
-        JFrame mainFrame = new JFrame("Konor and Kevin's POS");
+        JFrame mainFrame = new JFrame("Psychological Fringe's POS");
         mainFrame.setSize(800,600);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.setResizable(true);
-
-
 
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(mainGridLayout);

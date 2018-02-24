@@ -7,7 +7,7 @@ public class Person
     private int id;
     private int pin;
 
-    public Person(String name, int id, int pin)
+    public Person(String name, int id, String[] positions,int pin)
     {
 
     }
