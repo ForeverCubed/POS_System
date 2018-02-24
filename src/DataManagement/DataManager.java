@@ -7,6 +7,7 @@ public class DataManager {
     private String filename;
     private File file;
     private Scanner reader;
+    private FileWriter writer;
 
     public DataManager(String filename){
         // storing the filename and file as private variables
@@ -17,8 +18,8 @@ public class DataManager {
         //TODO: have the filereader instead make a blank file to read from
         try {
             this.reader = new Scanner(this.file);
-        } catch(FileNotFoundException e) {
-            System.out.println("Error reading file\n" + e.getMessage());
+        } catch(Exception e) {
+            System.out.println("Error reading file    " + e.getMessage());
             this.reader = null;
             return;
         }
@@ -26,7 +27,7 @@ public class DataManager {
     }
 
     // read from the stored file and return each line if the reader hasn't fucked up during init
-    private String[] readFile(){
+    public String[] readFile(){
         if(reader == null){
             System.out.println("FileReader not found (shit's broke yo)");
             return new String[] {};
@@ -38,12 +39,13 @@ public class DataManager {
             String line = reader.nextLine();
             lines.add(line);
         }
-
-        return (String[]) lines.toArray();
+        String[] filelines = new String[lines.size()];
+        filelines = lines.toArray(filelines);
+        return filelines;
     }
 
     // take in an array of string in the style of `"name",id,["positions"],pin`
-    private Person[] parsePeople(String[] peopleIn){
+    public Person[] parsePeople(String[] peopleIn){
         Person[] people = new Person[peopleIn.length];
         for(int i = 0; i < peopleIn.length; i++){
             String line = peopleIn[i];
@@ -55,4 +57,13 @@ public class DataManager {
         return people;
     }
 
+    public void addPerson(Person p){
+        try {
+            this.writer = new FileWriter(this.file, true);
+            this.writer.append("\n"+p.saveString());
+            this.writer.close();
+        } catch(Exception e){
+            System.out.println("Dun goofed adding someone, "+e.getMessage());
+        }
+    }
 }
