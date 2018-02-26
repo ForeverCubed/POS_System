@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Main {
+    //Konor is dumb
     public static void main(String[] args)
     {
         GridLayout mainGridLayout = new GridLayout();
@@ -17,10 +18,10 @@ public class Main {
         mainFrame.setResizable(true);
 
         JPanel mainPanel = new JPanel();
-        mainPanel.setLayout(mainGridLayout);
+       mainPanel.setLayout(mainGridLayout);
 
-        JButton exit = new JButton("Exit");
-        exit.setVisible(true);
+       JButton exit = new JButton("Exit");
+       exit.setVisible(true);
 
         exit.addActionListener(new ActionListener() {
             @Override
