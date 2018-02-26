@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Main {
-    //Konor is dumb
+    //Konor is smart!
     public static void main(String[] args)
     {
         GridLayout mainGridLayout = new GridLayout();
