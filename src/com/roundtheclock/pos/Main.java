@@ -9,11 +9,14 @@ public class Main {
     //Konor is smart!
     public static void main(String[] args)
     {
+        //TODO: settings file that controls a lot of settings
         GridLayout mainGridLayout = new GridLayout();
         mainGridLayout.setRows(10);
         mainGridLayout.setColumns(10);
         JFrame mainFrame = new JFrame("Alone in Ruins POS system");
-        mainFrame.setSize(800,600);
+        //Allow for this to be changed to fullscreen or not fullscreen
+        mainFrame.setSize(Display.getDisplayWidth(),Display.getDisplayHeight());
+        mainFrame.setAlwaysOnTop(true);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.setResizable(true);
 
