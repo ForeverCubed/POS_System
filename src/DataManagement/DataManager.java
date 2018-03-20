@@ -9,6 +9,8 @@ public class DataManager {
     private Scanner reader;
     private FileWriter writer;
 
+    //TODO: some sort of file encryption should go on, to make it more difficult for employees to steal information
+
     public DataManager(String filename){
         // storing the filename and file as private variables
         this.filename = filename;

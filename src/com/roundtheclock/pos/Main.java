@@ -12,7 +12,7 @@ public class Main {
         GridLayout mainGridLayout = new GridLayout();
         mainGridLayout.setRows(10);
         mainGridLayout.setColumns(10);
-        JFrame mainFrame = new JFrame("Psychological Fringe's POS");
+        JFrame mainFrame = new JFrame("Alone in Ruins POS system");
         mainFrame.setSize(800,600);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.setResizable(true);
