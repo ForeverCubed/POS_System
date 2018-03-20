@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b592a23-8061-4173-ac14-10146c2f54ab" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/roundtheclock/pos/Display.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/roundtheclock/pos/Config.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/roundtheclock/pos/Main.java" afterPath="$PROJECT_DIR$/src/com/roundtheclock/pos/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,6 +85,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/roundtheclock/pos/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataManagement/Person.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/roundtheclock/pos/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+              <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
               <folding>
                 <element signature="e#1085#1086#0" expanded="true" />
                 <element signature="e#1131#1132#0" expanded="true" />
@@ -133,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/DataManagement/DataManager.java" />
         <option value="$PROJECT_DIR$/src/com/roundtheclock/pos/Display.java" />
         <option value="$PROJECT_DIR$/src/com/roundtheclock/pos/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/roundtheclock/pos/Config.java" />
       </list>
     </option>
   </component>
@@ -593,14 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/roundtheclock/pos/UI_Interface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataManagement/DataManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -636,11 +637,27 @@
     <entry file="file://$PROJECT_DIR$/src/com/roundtheclock/pos/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
           <folding>
             <element signature="e#1085#1086#0" expanded="true" />
             <element signature="e#1131#1132#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/roundtheclock/pos/UI_Interface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/roundtheclock/pos/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
